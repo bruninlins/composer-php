@@ -2,7 +2,7 @@
 
 Este projeto é desenvolvido em PHP e utiliza o **Composer** para gerenciar dependências e carregar classes automaticamente.
 
--- Nesse projeto, fiz o download do [Composer](https://getcomposer.org/)
+- Nesse projeto, fiz o download do [Composer](https://getcomposer.org/)
 
 ---
 
