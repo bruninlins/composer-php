@@ -38,5 +38,44 @@ Se você nunca usou o Composer no seu computador, instale-o seguindo a documenta
 
 > Para projetos existentes, **não rode `composer init`**. Basta clonar o projeto e executar `composer install`.
 
-## Objetivo desse projeto
-O objetivo é acessar um site com a requisição `GET` 
+## Objetivo do Projeto
+O objetivo deste projeto é acessar um site por meio de uma requisição `GET`**, percorrer seu conteúdo HTML e extrair os dados desejados de forma estruturada e automatizada.
+Para isso, precisamos de um pacote para realizar requisições HTTP e outro para manipular e ler a estrutura DOM do HTML.
+
+Para isso iremos acessar o site: [Packagist](https://packagist.org/)
+- **Dom Crawler**: utilizado para percorrer e manipular a estrutura DOM do HTML.  
+- **GuzzleHttp / Guzzle**: utilizado para realizar requisições HTTP ao site.
+
+
+## Como Usar os Pacotes
+
+### 1. GuzzleHttp / Guzzle
+O Guzzle é utilizado para fazer requisições HTTP ao site. Com ele, você pode enviar requisições `GET`, `POST` e manipular as respostas de forma fácil.
+
+**Exemplo de uso:**
+```php
+use GuzzleHttp\Client;
+
+$client = new Client();
+$response = $client->request('GET', 'https://packagist.org/');
+
+$html = $response->getBody()->getContents();
+echo $html;
+```
+
+### 2. Dom crawler
+O Dom Crawler permite percorrer a estrutura DOM do HTML e extrair os dados desejados. Ele facilita a navegação por elementos como `div`, `span`, a, entre outros.
+
+
+## Como eu fiz a instalação das bibliotecas:
+- **Dom Crawler**: `composer require guzzlehttp/guzzle` no Prompt de comando
+- **GuzzleHttp / Guzzle**: eu adicionei no `composer.json` no `required` eu adicionei: `"symfony/dom-crawler": "^7.3"` E dentro do Prompt de comando eu executei: `composer install`.
+Logo depois de instalar dessa segunda forma, você precisa usar o comando `composer update`, ele além de baixar, ele atualiza as bibliotecas que estão sendo utilizadas.
+
+## Utilização do Symfony
+Nesse projeto foi ultilizado `use Symfony\Component\DomCrawler\Crawler;` para poder usar seletores css. Como o objetivo do projeto é pegar apenas os nomes dos cursos de um site. Utilizamos o `Symfony` para poder pegar as classes das tags.
+
+Exemplo: 
+```php
+$cursos = $crawler-> filter (selector: 'span.card-curso__nome');
+```
