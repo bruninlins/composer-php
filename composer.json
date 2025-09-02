@@ -1,0 +1,20 @@
+{
+    "name": "bruno/buscador-de-cursos",
+    "description": "projeto que busca projetos da alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Bruno\\BuscadorDeCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno Torres",
+            "email": "brunotorresoioizx@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10",
+        "symfony/dom-crawler": "^7.3"
+    }
+}
