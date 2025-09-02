@@ -31,3 +31,12 @@ Se você clonou o projeto do GitHub ou está começando, execute:
 
 ```bash
 composer install
+```
+
+### 2. Primeira vez usando o Composer
+Se você nunca usou o Composer no seu computador, instale-o seguindo a documentação oficial: [Composer](https://getcomposer.org/download/)
+
+> Para projetos existentes, **não rode `composer init`**. Basta clonar o projeto e executar `composer install`.
+
+## Objetivo desse projeto
+O objetivo é acessar um site com a requisição `GET` 
