@@ -73,9 +73,10 @@ O Dom Crawler permite percorrer a estrutura DOM do HTML e extrair os dados desej
 Logo depois de instalar dessa segunda forma, você precisa usar o comando `composer update`, ele além de baixar, ele atualiza as bibliotecas que estão sendo utilizadas.
 
 ## Utilização do Symfony
-Nesse projeto foi ultilizado `use Symfony\Component\DomCrawler\Crawler;` para poder usar seletores css. Como o objetivo do projeto é pegar apenas os nomes dos cursos de um site. Utilizamos o `Symfony` para poder pegar as classes das tags.
 
-Exemplo: 
+Neste projeto foi utilizado o componente `DomCrawler` do Symfony para pegar a classe css do componente:
+
 ```php
-$cursos = $crawler-> filter (selector: 'span.card-curso__nome');
+use Symfony\Component\DomCrawler\Crawler;
 ```
+
