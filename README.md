@@ -8,7 +8,7 @@ Este projeto é desenvolvido em PHP e utiliza o **Composer** para gerenciar depe
 
 ## 🔹 O que é o Composer?
 
-O Composer é o **gerenciador de dependências do PHP**, semelhante ao `npm` no Node.js ou `pip` no Python. Ele permite:
+O Composer é o **gerenciador de dependências do PHP**, semelhante ao `npm`  no Node.js ou `pip`  no Python. Ele permite:
 
 - Gerenciar bibliotecas que o projeto precisa.
 - Controlar versões das dependências.
