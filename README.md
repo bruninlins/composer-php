@@ -39,7 +39,7 @@ Se você nunca usou o Composer no seu computador, instale-o seguindo a documenta
 > Para projetos existentes, **não rode `composer init`**. Basta clonar o projeto e executar `composer install`.
 
 ## Objetivo do Projeto
-O objetivo deste projeto é acessar um site por meio de uma requisição `GET` percorrer seu conteúdo HTML e extrair os dados desejados de forma estruturada e automatizada.
+O objetivo deste projeto é acessar um site por meio de uma requisição `GET`  percorrer seu conteúdo HTML e extrair os dados desejados de forma estruturada e automatizada.
 Para isso, precisamos de um pacote para realizar requisições HTTP e outro para manipular e ler a estrutura DOM do HTML.
 
 Para isso iremos acessar o site: [Packagist](https://packagist.org/)
